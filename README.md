@@ -11,6 +11,21 @@ Currently supporting only basic text widgets:
 
 **Usage**
 
+Add jitpack.io repository in your root build.gradle at the end of repositories:
+
+    allprojects {
+		repositories {
+			...
+			maven { url 'https://jitpack.io' }
+		}
+	}
+     
+Add the dependency:
+
+	dependencies {
+	        compile 'com.github.metalurgus:LocaleText:0.0.1.1'
+	}
+
 Add xmlns to your layout root element:
 
 `xmlns:app="http://schemas.android.com/apk/res-auto"`
