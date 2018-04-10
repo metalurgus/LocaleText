@@ -1,5 +1,6 @@
 package com.github.metalurgus.localetext;
 
+import android.content.Context;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -9,7 +10,10 @@ import android.view.View;
 
 import java.util.Locale;
 
+import metalurgus.github.com.lib.base.LocaleChangeListenable;
 import metalurgus.github.com.lib.base.LocaleText;
+import metalurgus.github.com.lib.base.OnLocaleChangeListener;
+import metalurgus.github.com.lib.views.LocaleTextTextView;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -28,6 +32,21 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 LocaleText.setLocale(new Locale("en", "US"), MainActivity.this);
+            }
+        });
+
+        LocaleTextTextView customListenerTextView = findViewById(R.id.custom_listener);
+        customListenerTextView.setOnLocaleChangeListener(new OnLocaleChangeListener() {
+            @Override
+            public void onLocaleChange(Locale locale, int localeResId, Context context, LocaleChangeListenable listenable) {
+                switch (locale.getISO3Language().toLowerCase()) {
+                    case "rus":
+                        listenable.setText(context.getResources().getString(R.string.custom_text));
+                        break;
+                    case "eng":
+                        listenable.setText(context.getResources().getString(R.string.custom_text));
+                        break;
+                }
             }
         });
     }

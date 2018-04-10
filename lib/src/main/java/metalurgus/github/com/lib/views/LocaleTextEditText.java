@@ -2,10 +2,8 @@ package metalurgus.github.com.lib.views;
 
 import android.content.Context;
 import android.content.res.TypedArray;
-import android.os.Build;
-import android.support.annotation.RequiresApi;
 import android.util.AttributeSet;
-import android.widget.Button;
+import android.widget.EditText;
 
 import java.util.Locale;
 
@@ -15,12 +13,12 @@ import metalurgus.github.com.lib.base.LocaleChangeListenable;
 import metalurgus.github.com.lib.base.LocaleText;
 import metalurgus.github.com.lib.base.OnLocaleChangeListener;
 
-public class LocaleTextButton extends android.support.v7.widget.AppCompatButton implements LocaleChangeListenable {
-    public LocaleTextButton(Context context) {
+public class LocaleTextEditText extends android.support.v7.widget.AppCompatEditText implements LocaleChangeListenable {
+    public LocaleTextEditText(Context context) {
         super(context);
     }
 
-    public LocaleTextButton(Context context, AttributeSet attrs) {
+    public LocaleTextEditText(Context context, AttributeSet attrs) {
         super(context, attrs);
         storeResId(attrs, 0);
         if (localTextId != 0) {
@@ -28,7 +26,7 @@ public class LocaleTextButton extends android.support.v7.widget.AppCompatButton 
         }
     }
 
-    public LocaleTextButton(Context context, AttributeSet attrs, int defStyleAttr) {
+    public LocaleTextEditText(Context context, AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
         storeResId(attrs, 0);
         if (localTextId != 0) {

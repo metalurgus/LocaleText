@@ -1,5 +1,8 @@
 <resources>
     <string name="app_name">LocaleText</string>
     <string name="title_activity_main">MainActivity</string>
-    <string name="lang">English</string>
+    <string name="lang">Sample English text</string>
+    <string name="set_eng">Set Eng</string>
+    <string name="set_rus">Set Rus</string>
+    <string name="custom_text">Custom listener text</string>
 </resources>

@@ -4,20 +4,32 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".MainActivity">
+
     <metalurgus.github.com.lib.views.LocaleTextTextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:locale_text="@string/lang"/>
-    <Button
+        app:locale_text="@string/lang" />
+
+    <metalurgus.github.com.lib.views.LocaleTextTextView
+        android:id="@+id/custom_listener"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:locale_text="@string/custom_text" />
+
+
+    <metalurgus.github.com.lib.views.LocaleTextButton
         android:id="@+id/rus"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Set Rus"/>
-    <Button
+        app:locale_text="@string/set_rus" />
+
+    <metalurgus.github.com.lib.views.LocaleTextButton
         android:id="@+id/eng"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Set Eng"/>
+        app:locale_text="@string/set_eng" />
+
 
 </LinearLayout>
