@@ -1,5 +1,5 @@
 # LocaleText
-[![](https://jitpack.io/v/metalurgus/LocaleText.svg)](https://jitpack.io/#metalurgus/LocaleText) [![Android Arsenal](https://img.shields.io/badge/Android%20Arsenal-LocaleText-brightgreen.svg?style=flat)](http://android-arsenal.com/details/1/3920) [![License](http://img.shields.io/:license-gpl3-blue.svg?style=flat-square)](http://www.gnu.org/licenses/gpl-3.0.html)
+[![](https://jitpack.io/v/metalurgus/LocaleText.svg)](https://jitpack.io/#metalurgus/LocaleText)[![Android Arsenal]( https://img.shields.io/badge/Android%20Arsenal-LocaleText-green.svg?style=flat )]( https://android-arsenal.com/details/1/6921 ) [![License](http://img.shields.io/:license-gpl3-blue.svg?style=flat-square)](http://www.gnu.org/licenses/gpl-3.0.html)
 
 Library to easy change current locale without having to recreate the activity or restart the app
 
